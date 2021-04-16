@@ -1,0 +1,50 @@
+using System.IO;
+using System;
+
+namespace day3
+{ 
+  public interface sem1
+    {
+        void sem1marks(int sem1_marks);
+    }
+
+    public interface sem2
+    {
+        void sem2marks(int sem2_marks);
+    }
+
+    class totalmarks : sem1, sem2
+    {
+        int s1, s2;
+        int total;
+        public void sem1marks(int x)
+        {
+            this.s1 = x;
+        }
+
+        public void sem2marks(int y)
+        {
+            this.s2 = y;
+        }
+
+        public int _total()
+        {
+            total = s1 + s2;
+            return total;
+        }
+    }
+    class Program
+{
+    static void Main(string[] args)
+    {
+
+           
+            totalmarks tt = new totalmarks();
+
+            tt.sem1marks(12);
+            tt.sem2marks(22);
+            Console.WriteLine("The total marks={0}", tt._total());
+            Console.ReadKey();
+    }
+}
+}
