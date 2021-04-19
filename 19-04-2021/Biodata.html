@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script language="VBSCRIPT" type="text/vbscript">
+		
+		Dim employeeName
+		Dim phoneNumber
+		Dim address
+		Dim dateofBirth
+		Dim qualification
+		Dim designation
+		Dim doj
+		Dim salary
+        call inputData()
+        call display()
+		Function inputData()
+
+              employeeName=inputbox("Enter Name")
+              phoneNumber= inputbox("Enter phone number")
+              address= inputbox("Enter address")
+              dateofBirth= inputbox("Enter DOB")
+              qualification = inputbox("Enter qualification")
+              designation = inputbox("Enter your designation")
+              doj = inputbox("Enter your doj")
+              salary = inputbox("Enter your salary")
+
+        End Function
+         
+        Function display()
+            msgbox "BIODATA"& VBCRLF & "Emplyee Name: "& employeeName & VBCRLF & VBCRLF & "Phon no: "& phoneNumber & VBCRLF & "address: "& address & VBCRLF &"date of birth: " & dateofBirth & VBCRLF & "Qualification: "& qualification  & VBCRLF & "designation: "& designation & VBCRLF & "date of joining: "& doj & VBCRLF &"salary: "&salary
+
+        End Function      
+
+		 
+
+		    
+	</script>
+</head>
+<body>
+
+</body>
+</html>
