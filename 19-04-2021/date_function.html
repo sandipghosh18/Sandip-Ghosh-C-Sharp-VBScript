@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+</head>
+<body>
+<script language="vbscript" type="text/vbscript">
+
+dim today
+today = now
+msgbox("Today's date and time is "& today)
+today_date = date
+msgbox("Today's date is " &today_date)
+msgbox("Checking if the today_date is of date type: "& isdate(today_date))
+daynumber = Day(date)
+msgbox("Today day number is "& daynumber)
+monthnumber = Month(date)
+msgbox("The month is "& monthnumber)
+yearnumber = Year(date)
+msgbox("the year is "& yearnumber)
+
+dob=#06-02-1998#
+
+diff= Datediff("yyyy",dob-yearnumber)
+msgbox("Difference=" &diff)
+
+
+
+</script>
+</body>
+</html>
+
+//cint
+//clng
+//cdbl
+//cstr
+//cbool
+//cdate
