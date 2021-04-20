@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script type="text/vbscript" language="vbscript">
+
+        Dim eno, ename, dept, sal, desig
+
+
+
+        eno = CInt(inputbox("enter employee number: "))
+
+        ename = InputBox("enter employee name: ")
+
+        dept  = inputbox("enter employee department: ")
+
+        sal = CLng(inputbox("enter employee salary: "))
+
+        desig = inputbox("enter your designation: ")
+
+
+
+        if(dept="hrd" AND sal>80000) then
+
+            sal = sal+5000
+
+            msgbox("the updated salary is: "&sal)
+
+        elseif(dept="sales" AND desig="manager") then
+
+            sal = sal+4000
+
+            msgbox("employee number: "&eno)
+
+            msgbox("employee name "&ename)
+
+            msgbox("salary: "&sal)
+
+        else
+
+            msgbox("something went wrong")
+
+        end if
+
+    </script>
+
+</body>
+
+</html>
