@@ -1,0 +1,41 @@
+<html>
+<body>
+<script language="vbscript" type="text/vbscript">
+Document.write("<b>Example showing Date Functions</b><br> <br>")
+
+document.write("The current system date is: <br/>")
+document.write(Date)
+
+document.write("<br/><br/><b>DateAdd Funtion</b> <br/>")
+document.write(DateAdd("yyyy",1,"31-Jan-15") & "<br />")
+document.write(DateAdd("q",1,"31-Jan-15") & "<br />")
+document.write(DateAdd("m",1,"31-Jan-15") & "<br />")
+document.write(DateAdd("y",1,"31-Jan-15") & "<br />")
+document.write(DateAdd("d",1,"31-Jan-15") & "<br />")
+document.write(DateAdd("w",1,"31-Jan-15") & "<br />")
+document.write(DateAdd("ww",1,"31-Jan-15") & "<br />")
+document.write(DateAdd("h",1,"31-Jan-15 08:50:00") & "<br />")
+document.write(DateAdd("n",1,"31-Jan-15 08:50:00") & "<br />")
+document.write(DateAdd("s",1,"31-Jan-15 08:50:00") & "<br />")
+
+fromDate="31-Jan-14 00:00:00"
+toDate="31-Jan-15 23:59:00"
+document.write("<br/><br/><b>DateDiff Funtion</b>")
+document.write("<br/><br/><b>FromDate=31-Jan-14 00:00:00</b> <br/>")
+document.write("<b>ToDate=31-Jan-15 23:59:00</b> <br/>")
+document.write(DateDiff("yyyy",fromDate,toDate) & "<br />")
+document.write(DateDiff("q",fromDate,toDate) & "<br />")
+document.write(DateDiff("m",fromDate,toDate) & "<br />")
+document.write(DateDiff("y",fromDate,toDate) & "<br />")
+document.write(DateDiff("d",fromDate,toDate) & "<br />")
+document.write(DateDiff("w",fromDate,toDate) & "<br />")
+document.write(DateDiff("ww",fromDate,toDate) & "<br />")
+document.write(DateDiff("h",fromDate,toDate) & "<br />")
+document.write(DateDiff("n",fromDate,toDate) & "<br />")
+document.write(DateDiff("s",fromDate,toDate) & "<br />")
+
+
+
+</script>
+</body>
+</html>
