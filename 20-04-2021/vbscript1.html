@@ -1,1 +1,32 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/vbscript" language="vbscript">
+		
+		dim month_number
+		dim year_number
+		month_number=cint(inputbox("Enter the month number"))
+
+		if(month_number=2) then
+		 year_number=cint(inputbox("Enter the year"))
+		
+		end if 
+
+		if(month_number =1 OR month_number = 3 OR month_number = 5 OR month_number = 7 OR month_number=8 OR month_number=10 OR month_number=12) then
+		  msgbox "Number of days= 31"
+		elseif(month_number=2 AND (year_number MOD 4)=0 AND (year_number MOD 100)=0 AND (year_number MOD 400)=0) then
+		msgbox("Number of days = 29")
+		elseif(month_number =4 OR month_number = 6 OR month_number = 9) then
+		   msgbox("Number of days = 30")
+		else
+		   msgbox("Number of days = 28")
+		end if    
+	</script>
+</head>
+<body>
+
+</body>
+</html>
