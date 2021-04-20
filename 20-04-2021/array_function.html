@@ -1,0 +1,38 @@
+<html>
+<body>
+<script language="vbscript" type="text/vbscript">
+
+
+dim num : num = array(1,5,12,78)
+document.write(num(2))
+document.write("<br>")
+
+weekdays= Array("Sunday","monday","thuesday","wednesday","thursday","friday","saturday","sunday")
+
+filterarry= filter(weekdays,"s")
+
+
+
+document.write(join(weekdays,","))
+state="i am sandip how are you?"
+
+myarr= split(state)
+
+for each x in myarr
+  document.write(x &"<br>")
+
+ next 
+document.write(myarr(4))
+
+document.write(lbound(myarr) & "<br>")
+document.write(ubound(myarr)& "<br>")
+
+
+v=join(myarr,"*")
+document.write(v &"<br>")
+document.write(isarray(v))
+
+
+ </script>
+</body>
+</html>
