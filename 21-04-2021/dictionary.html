@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+</head>
+
+<body>
+<script language="vbscript" type="text/vbscript">
+
+dim today : today = now
+
+document.write today &"<br>"
+document.write year(today) &"<br>"
+document.write monthname(month(today)) &"<br>"
+document.write weekday(day(today)) &"<br>"
+document.write hour(today) &"<br>"
+document.write dateadd("yyyy",1,today) &"<br>"
+document.write dateadd("d",1,dateadd("m",1,today)) &"<br>"
+
+x=year(today)
+y=monthname(month(today))
+z=weekday(day(today))
+c=hour(today)
+
+
+dim table
+set table = CreateObject("Scripting.Dictionary")
+
+
+table.add "1",x
+table.add "2" ,y
+table.add "3" ,z
+table.add "4" ,c
+
+
+dim val
+
+val = table.items
+
+for each cc in val
+
+   document.write cc &"<br>"
+   next
+
+
+dim colkey
+
+colkey= table.keys
+
+
+for each pp in colkey
+
+  document.write pp &"<br>"
+  next
+table.removeall
+
+val = table.items
+
+for each cc in val
+
+   document.write cc &"<br>"
+   next
+
+
+</script>
+</body>
+</html>
