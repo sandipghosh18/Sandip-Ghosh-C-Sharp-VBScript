@@ -1,0 +1,18 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+</head>
+<body>
+<script language="vbscript" type="text/vbscript">
+On Error GOTO 0
+Dim a, b
+a = 90
+b =0
+result = a/b
+If err.number <> 0 then
+Msgbox "Error Number is :- " & Cstr(Err.number) &
+vbCrLf & "Error Description is :- " & Err.Description
+end If
+</script>
+</body>
+</html>
