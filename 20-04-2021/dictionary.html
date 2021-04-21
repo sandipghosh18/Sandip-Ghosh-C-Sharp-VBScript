@@ -1,0 +1,54 @@
+<html>
+<body>
+<script language="vbscript" type="text/vbscript">
+
+dim datalist
+
+set datalist = CreateObject("Scripting.Dictionary")
+
+
+function addData(x,y)
+  datalist.add x,y
+end function  
+
+
+function display()
+ dim disp
+ disp = datalist.items
+
+ for each x in disp
+   document.write(x &"<br>")
+  next
+end function 
+
+
+function getSize()
+msgbox "The size of data list is " &datalist.count
+end function  
+
+
+
+while true
+     
+     dim choice
+       Document.write "Enter choice 1.Add 2. Display 3. Display count"
+     choice = CInt(inputbox("Enter the choice"))
+    Select case choice
+   case 1
+        dim a
+        dim b
+        a=inputbox("Enter the Key to add")
+	    b=inputbox("Enter the number to add")
+	   call addData(a,b)
+   case 2
+	   call display()
+	
+	       
+End select
+
+wend 
+ 
+
+</script>
+</body>
+</html>
