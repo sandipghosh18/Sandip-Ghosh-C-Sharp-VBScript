@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script language="vbscript" type="text/vbscript">
+Set objDictionary = CreateObject("Scripting.Dictionary")
+objDictionary.Add "Printer1", "Printing"
+objDictionary.Add "Printer2", "Offline"
+objDictionary.Add "Printer3", "Printing"
+If objDictionary.Exists("Printer4") Then
+document.write "Printer 4 is in the Dictionary."
+Else
+document.write "Printer 4 is not in the Dictionary."
+End If
+document.write objDictionary.Exists("Printer4")
+</script>
+</body>
+</html>
