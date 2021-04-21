@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+</head>
+<body>
+<script language="vbscript" type="text/vbscript">
+Const InvalidCall = 5
+Document.Write "Global code start"
+func1
+Document.Write "Global code end"
+
+Sub func1()
+      On Error Resume Next
+      Document.Write "func1 Start"
+      func2
+      Document.Write "func1 End"
+End Sub
+Sub func2()
+      Document.Write "func2 Start"       
+      Err.Raise InvalidCall
+      Document.Write "func2 End"
+End Sub 
+</script>
+</body>
+</html>
