@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+</head>
+
+<body>
+<script language="vbscript" type="text/vbscript">
+
+	dim obj, obj1, obj2, strexcelpath
+
+	strExcelPath ="C:\Users\Sandip Ghosh\Desktop\vbscript\data.xlsx"
+
+	set obj = createObject("Excel.Application")
+
+	obj.visible= true
+
+	msgbox "true"
+
+	set obj1= obj.workbooks.Add()
+	set obj2= obj1.worksheets("shet1")
+
+	obj2.cells(1,5).value="hello"
+
+	obj1.saveas strExcelPath 
+	obj1.close
+	set obj1=nothing
+
+
+
+</script>
+</body>
+</html>
