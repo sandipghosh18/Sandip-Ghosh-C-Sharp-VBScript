@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+</head>
+<body>
+<script language="vbscript" type="text/vbscript">
+   document.write("<b>Example showing Pass by reference</b> <br/>")
+   
+Function fnadd(ByRef num1, ByRef num2)
+   num1 = 4
+   num2 = 5
+End Function
+ 
+ Dim x,y
+ x=6
+ y=4
+ res= fnadd(x,y)
+ document.write("The value of x is " & x & "<br />")
+ document.write("The value of y is " & y & "<br />")
+ 
+</script>
+</body>
+</html>
