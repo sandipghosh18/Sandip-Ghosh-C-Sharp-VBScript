@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+</head>
+
+<body>
+<script language="vbscript" type="text/vbscript">
+
+	strtextfile ="C:\Users\Sandip Ghosh\Desktop\vbscript\myfile.txt"
+    set fso = createObject("Scripting.FileSystemObject")
+    set myfile = fso.createTextfile(strtextfile,true)
+     if fso.fileexists(strtextfile) then
+     msgbox "file has been created"
+     end if
+
+     data ="I am sandip"
+
+     myfile.writeLine(data)
+     myfile.close
+
+</script>
+</body>
+</html>
